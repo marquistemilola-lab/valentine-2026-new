@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For My Favorite Person</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital@0;1&family=Montserrat:wght@300;400&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <style>
+        :root {
+            --bg: #fffdfb;
+            --text: #2d2d2d;
+            --accent: #ad383e;
+            --soft-rose: #f9ebeb;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: var(--bg);
+            color: var(--text);
+            font-family: 'Montserrat', sans-serif;
+            overflow-x: hidden;
+            scroll-behavior: smooth;
+        }
+
+        /* Hero Section */
+        .hero {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            background: linear-gradient(rgba(255,253,251,0.5), rgba(255,253,251,0.5)), 
+                        url('YOUR_COVER_PHOTO_URL') center/cover no-repeat;
+        }
+
+        h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 3.5rem;
+            margin-bottom: 0.5rem;
+            font-style: italic;
+        }
+
+        .hero p { font-size: 1.1rem; letter-spacing: 2px; text-transform: uppercase; opacity: 0.8; }
+
+        /* Romantic Notes Section */
+        .notes-container {
+            padding: 100px 20px;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .note-card {
+            background: white;
+            padding: 40px;
+            margin-bottom: 50px;
+            border-radius: 4px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.03);
+            border-left: 3px solid var(--accent);
+        }
+
+        .note-card h2 { font-family: 'Playfair Display', serif; color: var(--accent); }
+
+        /* Photo Grid */
+        .gallery {
+            column-count: 3;
+            column-gap: 20px;
+            padding: 0 40px 100px 40px;
+        }
+
+        .gallery img {
+            width: 100%;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            transition: transform 0.3s ease;
+        }
+
+        .gallery img:hover { transform: scale(1.02); }
+
+        /* Footer */
+        footer {
+            padding: 60px;
+            text-align: center;
+            background: var(--soft-rose);
+            font-family: 'Playfair Display', serif;
+            font-size: 1.5rem;
+        }
+
+        @media (max-width: 768px) {
+            .gallery { column-count: 1; }
+            h1 { font-size: 2.5rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <section class="hero">
+        <h1 data-aos="fade-down" data-aos-duration="1500">To My Dearest [BLOSSOM UNOGU]</h1>
+        <p data-aos="fade-up" data-aos-duration="1500">Every moment is a favorite when I'm with you.</p>
+    </section>
+
+    <section class="notes-container">
+        <div class="note-card" data-aos="fade-right">
+            <h2>The Way You See the World</h2>
+            <p>I've always loved how you notice the little details that everyone else misses. It makes me want to slow down and enjoy life more, You mean so much to me, darling.</p>
+        </div>
+
+        <div class="note-card" data-aos="fade-left">
+            <h2>A Promise for Today</h2>
+            <p>I promise to be your loudest cheerleader, your safest place, and the person who makes you feel like the only woman in the world. Happy Valentine's Day.</p>
+        </div>
+    
+        <div class="note-card" data-aos="fade-right">
+            <h2>"Just wanted to let you know I’m thinking about you and it’s making me smile ."</h2>
+            <p>You are very special to me. please be my val forever</p>
+        </div>    
+
+    <div class="gallery">
+        <img src="images/hey.jpeg" data-aos="zoom-in" alt="Memory 1">
+        <img src="images/WhatsApp Image  at 8.39.49 AM.jpeg" data-aos="zoom-in" alt="Memory 2">
+        <img src="images/WhatsApp Image 2026-02-13 at 8.39.41 AM.jpeg" data-aos="zoom-in" alt="Memory 3">
+        <img src="images/WhatsApp Image 2026-02-13 at 8.39.42 AM.jpeg" data-aos="zoom-in" alt="Memory 4">
+        <img src="images/WhatsApp Image 2026-02-13 t 8.39.42 AM.jpeg" data-aos="zoom-in" alt="Memory 5">
+        <video src="images/WhatsApp Video 2026-02-13 at 8.39.49 AM.mp4" data-aos="zoom-in" alt="Memory 6">
+    </div>
+
+    <footer>
+        "Love you more than words can put on a screen Blossom Unogu."
+                                                                
+        from Temilola M.
+    </footer>
+
+    <script>
+        AOS.init({ duration: 1000, once: true });
+    </script>
+</body>
+</html>
